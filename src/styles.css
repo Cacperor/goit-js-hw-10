@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#search-box {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.notification {
+  color: red;
+  font-weight: bold;
+}
+
+.country-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.country-list li {
+  margin: 10px;
+  cursor: pointer;
+  text-align: center; /* Center text and image */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.country-list img {
+  max-width: 50px; /* Set the maximum width of the flag image */
+  height: auto;
+  margin-bottom: 5px; /* Adjust margin between flag and country name */
+}
+
+.country-list span {
+  margin-top: 5px; /* Adjust margin between flag and country name */
+}
+
+.country-info {
+  margin-top: 20px;
+}
+
+.country-info img {
+  max-width: 100px; /* Set the maximum width for the flag in country info */
+  height: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.country-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.country-info p {
+  margin: 0 0 10px;
+}
