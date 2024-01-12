@@ -20,16 +20,16 @@ const debounceFetch = _.debounce(async () => {
     const countries = await fetchCountries(searchTerm);
 
     if (countries.length > 10) {
-      notiflix.notification('Too many matches found. Please enter a more specific name.');
+      Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
     } else if (countries.length >= 2 && countries.length <= 10) {
       displayCountryList(countries);
     } else if (countries.length === 1) {
       displayCountryInfo(countries[0]);
     } else {
-      notiflix.notification('Oops, there is no country with that name');
+      Notiflix.Notify.info('Oops, there is no country with that name');
     }
   } catch (error) {
-    notiflix.notification(`Error: ${error.message}`);
+    Notiflix.Notify.info(`${error.message}`);
   }
 }, 300);
 
